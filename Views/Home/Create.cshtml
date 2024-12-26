@@ -1,0 +1,246 @@
+﻿@model Registration.Models.StudentInformation
+
+@{
+    ViewData["Title"] = "Create";
+    Layout = "~/Views/layout/_Layout.cshtml";
+}
+
+<div class="container">
+    <h1 class="text-center">Create Student Information</h1>
+
+    <div class="row justify-content-center">
+        <div class="col-md-8">
+            <h4 class="text-center">Student Information</h4> 
+            <hr/>
+            <form id="studentForm" method="post" enctype="multipart/form-data" action="@Url.Action("Create", "Home")">
+                <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+
+                <div class="form-group">
+                    <label asp-for="Name" class="control-label"></label>
+                    <input asp-for="Name" class="form-control" />
+                    <span asp-validation-for="Name" class="text-danger"></span>
+                </div>
+
+                <div class="form-group">
+                    <label asp-for="Email" class="control-label"></label>
+                    <input asp-for="Email" class="form-control" />
+                    <span asp-validation-for="Email" class="text-danger"></span>
+                </div>
+
+                <div class="form-group">
+                    <label asp-for="MobileNo" class="control-label"></label>
+                    <input asp-for="MobileNo" class="form-control" />
+                    <span asp-validation-for="MobileNo" class="text-danger"></span>
+                </div>
+
+                <div class="form-group">
+                    <label asp-for="Lang" class="control-label"></label>
+                    <select asp-for="Lang" class="form-control" asp-items="ViewBag.Language">
+                        <option value="">-- Select a Language --</option>
+                    </select>
+                    <span asp-validation-for="Lang" class="text-danger"></span>
+                </div>
+
+                <div class="form-group">
+                    <label class="control-label">Gender</label>
+                    <div>
+						<input asp-for="Gender" type="radio" name="Gender" value="Male" />
+                        <label>Male</label>
+                    </div>
+                    <div>
+                        <input asp-for="Gender" type="radio" name="Gender" value="Female" />
+                        <label>Female</label>
+                    </div>
+                    <span asp-validation-for="Gender" class="text-danger"></span>
+                </div>
+
+                <div class="form-group">
+                    <label>Languages</label>
+                    @foreach (var language in ViewBag.Languages as List<SelectListItem>)
+                    {
+                        <div>
+                            <input name="lstLanguages" type="checkbox" value="@language.Value" />
+                            <label>@language.Text</label>
+                        </div>
+                    }
+                    <span class="text-danger" id="languageError"></span>
+                </div>
+
+
+                <div class="form-group">
+                    <label asp-for="Date" class="control-label"></label>
+                    <input asp-for="Date" class="form-control" />
+                    <span asp-validation-for="Date" class="text-danger"></span>
+
+                </div>
+
+                <div class="form-group">
+                    <label asp-for="PhotoFile">Upload Photo</label>
+                    <input asp-for="PhotoFile" type="file" class="form-control" accept=".jpg, .jpeg, .png, .gif" id="PhotoFile" />
+                    <span id="photoError" style="color: red; display: none;">Please upload a valid image file (jpg, jpeg, png, gif).</span>
+                </div>
+                @Html.ValidationMessageFor(model => model.PhotoFile, "", new { @class = "text-danger" })
+                <div class="form-group">
+                    <label asp-for="DocumentFile">CV</label>
+                    <input asp-for="DocumentFile" type="file" class="form-control" accept=".pdf" id="DocumentFile" />
+                    <span id="documentError" style="color: red; display: none;">Please upload a valid PDF file.</span>
+                </div>
+                @Html.ValidationMessageFor(model => model.DocumentFile, "", new { @class = "text-danger" })
+
+
+
+                <div class="form-group d-flex justify-content-between">
+                    <button type="submit" value="Save" id="submitBtn" class="btn btn-primary">Save</button>
+                    <a asp-action="Index" class="btn btn-secondary">Back to List</a>
+                </div>
+
+            </form>
+        </div>
+    </div>
+</div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="https://ajax.aspnetcdn.com/ajax/jquery.validate/1.19.3/jquery.validate.min.js"></script>
+<script src="https://ajax.aspnetcdn.com/ajax/jquery.validate.unobtrusive/3.2.11/jquery.validate.unobtrusive.min.js"></script>
+<script>
+    // Reusable function to handle file validation
+    function validateFile(inputId, allowedExtensions, errorMessageId, submitButtonSelector) {
+        debugger;
+        document.getElementById(inputId).addEventListener("change", function () {
+            var file = this.files[0];
+            var fileExtension = file ? file.name.split('.').pop().toLowerCase() : '';
+
+            // Check if the selected file has a valid extension
+            if (file && allowedExtensions.indexOf(fileExtension) === -1) {
+                // Show error message
+                document.getElementById(errorMessageId).style.display = "block";
+                // Disable submit button
+                document.querySelector(submitButtonSelector).disabled = true;
+            } else {
+                // Hide error message
+                document.getElementById(errorMessageId).style.display = "none";
+                // Enable submit button
+                document.querySelector(submitButtonSelector).disabled = false;
+            }
+        });
+    }
+
+    // Validate image file
+    // Validate image file
+    validateFile("PhotoFile", ["jpg", "jpeg", "png", "gif", "bmp"], "photoError", "button[type='submit']");
+
+    // Validate document file (PDF)
+    validateFile("DocumentFile", ["pdf"], "documentError", "button[type='submit']");
+
+
+
+    $(document).ready(function){
+        $("#studentForm").submit(function (event) {
+            event.preventDefault(); // Prevent default form submission
+        }
+
+        if ($("#studentForm").valid()) {
+            var formData = new FormData(this); // Use FormData for file upload
+
+            // Debugging: Log FormData content
+            for (var pair of formData.entries()) {
+                console.log(pair[0] + ': ' + pair[1]);
+            }
+
+            $.ajax({
+                url: '@Url.Action("Create", "Home")',
+                type: 'POST',
+                data: formData,
+                processData: false,
+                contentType: false,
+                success: function (response) {
+                    if (response.success) {
+                        alert(response.message);
+                        window.location.href = '@Url.Action("Index", "Home")';
+                    } else {
+                        alert("Error: " + response.message);
+                    }
+                },
+                error: function (xhr, status, error) {
+                    console.error("Error: " + error);
+                    console.error("Status: " + status);
+                }
+            });
+        } else {
+            alert("Please fill in the required fields.");
+        }
+    });
+</script>
+@* 
+<script>
+       $(document).ready(function () {
+        $("#studentForm").submit(function (event) {
+            event.preventDefault();  // Prevent default form submission
+
+            // Clear previous errors
+            $('.text-danger').text('');
+
+            if ($("#studentForm").valid()) {
+                var formData = new FormData(this);  // Use FormData for file upload
+
+                $.ajax({
+                    url: '@Url.Action("Create", "Home")',
+                    type: 'POST',
+                    data: formData,
+                    processData: false,  
+                    contentType: false, 
+                    success: function (response) {
+                        if (response.success) {
+                            alert(response.message);
+                            window.location.href = '@Url.Action("Index", "Home")';
+                        } else {
+                             alert("Error " + response.message);
+                        }
+                    },
+                    error: function (xhr, status, error) {
+                        console.error("Error: " + error);
+                        console.error("Status: " + status);
+                    }
+                });
+            } else {
+                alert("Please fill in the required fields.");
+            }
+        });
+    });
+
+</script> *@
+<script>
+    $(document).ready(function () {
+        // Checkbox validation
+        function validateCheckboxes() {
+            var selectedCheckboxes = $("input[name='lstLanguages']:checked").length; // Count checked checkboxes
+            if (selectedCheckboxes < 1) { // Modify this number based on the required minimum selections
+                // alert("Please select at least one language.");
+                return false;
+            }
+            return true;
+        }
+
+        // Form submission
+        $("#studentForm").submit(function (event) {
+            // Prevent default submission if checkboxes are not valid
+            if (!validateCheckboxes()) {
+                event.preventDefault();
+            }
+        });
+    });
+</script>
+<script>
+    $(document).ready(function () {
+        $("#studentForm").submit(function (event) {
+            var selectedCheckboxes = $("input[name='lstLanguages']:checked").length;
+
+            if (selectedCheckboxes < 1) {
+                $("#languageError").text("Please select at least one language.");
+                event.preventDefault(); // Stop form submission
+            } else {
+                $("#languageError").text(""); // Clear error message
+            }
+        });
+    });
+</script>

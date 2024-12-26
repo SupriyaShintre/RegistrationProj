@@ -1,0 +1,166 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\User\\OneDrive\\Documents\\.net\\HelloWorld\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{F072E7F4-A95A-449F-BCDD-6C74DDB3918E}|Registration.csproj|c:\\users\\user\\onedrive\\documents\\.net\\helloworld\\views\\home\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{F072E7F4-A95A-449F-BCDD-6C74DDB3918E}|Registration.csproj|solutionrelative:views\\home\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F072E7F4-A95A-449F-BCDD-6C74DDB3918E}|Registration.csproj|c:\\users\\user\\onedrive\\documents\\.net\\helloworld\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F072E7F4-A95A-449F-BCDD-6C74DDB3918E}|Registration.csproj|solutionrelative:controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F072E7F4-A95A-449F-BCDD-6C74DDB3918E}|Registration.csproj|c:\\users\\user\\onedrive\\documents\\.net\\helloworld\\models\\studentinformation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F072E7F4-A95A-449F-BCDD-6C74DDB3918E}|Registration.csproj|solutionrelative:models\\studentinformation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F072E7F4-A95A-449F-BCDD-6C74DDB3918E}|Registration.csproj|c:\\users\\user\\onedrive\\documents\\.net\\helloworld\\views\\home\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{F072E7F4-A95A-449F-BCDD-6C74DDB3918E}|Registration.csproj|solutionrelative:views\\home\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F072E7F4-A95A-449F-BCDD-6C74DDB3918E}|Registration.csproj|c:\\users\\user\\onedrive\\documents\\.net\\helloworld\\models\\student_dbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F072E7F4-A95A-449F-BCDD-6C74DDB3918E}|Registration.csproj|solutionrelative:models\\student_dbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F072E7F4-A95A-449F-BCDD-6C74DDB3918E}|Registration.csproj|c:\\users\\user\\onedrive\\documents\\.net\\helloworld\\models\\studentinfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F072E7F4-A95A-449F-BCDD-6C74DDB3918E}|Registration.csproj|solutionrelative:models\\studentinfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F072E7F4-A95A-449F-BCDD-6C74DDB3918E}|Registration.csproj|c:\\users\\user\\onedrive\\documents\\.net\\helloworld\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{F072E7F4-A95A-449F-BCDD-6C74DDB3918E}|Registration.csproj|solutionrelative:views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F072E7F4-A95A-449F-BCDD-6C74DDB3918E}|Registration.csproj|c:\\users\\user\\onedrive\\documents\\.net\\helloworld\\views\\home\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{F072E7F4-A95A-449F-BCDD-6C74DDB3918E}|Registration.csproj|solutionrelative:views\\home\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F072E7F4-A95A-449F-BCDD-6C74DDB3918E}|Registration.csproj|c:\\users\\user\\onedrive\\documents\\.net\\helloworld\\controllers\\logincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F072E7F4-A95A-449F-BCDD-6C74DDB3918E}|Registration.csproj|solutionrelative:controllers\\logincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Edit.cshtml",
+              "DocumentMoniker": "C:\\Users\\User\\OneDrive\\Documents\\.net\\HelloWorld\\Views\\Home\\Edit.cshtml",
+              "RelativeDocumentMoniker": "Views\\Home\\Edit.cshtml",
+              "ToolTip": "C:\\Users\\User\\OneDrive\\Documents\\.net\\HelloWorld\\Views\\Home\\Edit.cshtml",
+              "RelativeToolTip": "Views\\Home\\Edit.cshtml",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAAAE0BAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-12-12T08:31:47.941Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "StudentInformation.cs",
+              "DocumentMoniker": "C:\\Users\\User\\OneDrive\\Documents\\.net\\HelloWorld\\Models\\StudentInformation.cs",
+              "RelativeDocumentMoniker": "Models\\StudentInformation.cs",
+              "ToolTip": "C:\\Users\\User\\OneDrive\\Documents\\.net\\HelloWorld\\Models\\StudentInformation.cs",
+              "RelativeToolTip": "Models\\StudentInformation.cs",
+              "ViewState": "AgIAAAcAAAAAAAAAAAAkwBgAAAA8AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-19T08:34:45.535Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Create.cshtml",
+              "DocumentMoniker": "C:\\Users\\User\\OneDrive\\Documents\\.net\\HelloWorld\\Views\\Home\\Create.cshtml",
+              "RelativeDocumentMoniker": "Views\\Home\\Create.cshtml",
+              "ToolTip": "C:\\Users\\User\\OneDrive\\Documents\\.net\\HelloWorld\\Views\\Home\\Create.cshtml",
+              "RelativeToolTip": "Views\\Home\\Create.cshtml",
+              "ViewState": "AgIAANQAAAAAAAAAAAAAAPYAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-12-12T05:26:52.418Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "HomeController.cs",
+              "DocumentMoniker": "C:\\Users\\User\\OneDrive\\Documents\\.net\\HelloWorld\\Controllers\\HomeController.cs",
+              "RelativeDocumentMoniker": "Controllers\\HomeController.cs",
+              "ToolTip": "C:\\Users\\User\\OneDrive\\Documents\\.net\\HelloWorld\\Controllers\\HomeController.cs",
+              "RelativeToolTip": "Controllers\\HomeController.cs",
+              "ViewState": "AgIAAEUBAAAAAAAAAAAmwHcBAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-19T05:03:50.992Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "StudentInfo.cs",
+              "DocumentMoniker": "C:\\Users\\User\\OneDrive\\Documents\\.net\\HelloWorld\\Models\\StudentInfo.cs",
+              "RelativeDocumentMoniker": "Models\\StudentInfo.cs",
+              "ToolTip": "C:\\Users\\User\\OneDrive\\Documents\\.net\\HelloWorld\\Models\\StudentInfo.cs",
+              "RelativeToolTip": "Models\\StudentInfo.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAAhAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-17T10:03:01.379Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "student_dbContext.cs",
+              "DocumentMoniker": "C:\\Users\\User\\OneDrive\\Documents\\.net\\HelloWorld\\Models\\student_dbContext.cs",
+              "RelativeDocumentMoniker": "Models\\student_dbContext.cs",
+              "ToolTip": "C:\\Users\\User\\OneDrive\\Documents\\.net\\HelloWorld\\Models\\student_dbContext.cs",
+              "RelativeToolTip": "Models\\student_dbContext.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAGwAAAAPAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-17T07:21:30.845Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "LoginController.cs",
+              "DocumentMoniker": "C:\\Users\\User\\OneDrive\\Documents\\.net\\HelloWorld\\Controllers\\LoginController.cs",
+              "RelativeDocumentMoniker": "Controllers\\LoginController.cs",
+              "ToolTip": "C:\\Users\\User\\OneDrive\\Documents\\.net\\HelloWorld\\Controllers\\LoginController.cs",
+              "RelativeToolTip": "Controllers\\LoginController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-19T05:04:07.743Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\User\\OneDrive\\Documents\\.net\\HelloWorld\\Views\\Home\\Index.cshtml",
+              "RelativeDocumentMoniker": "Views\\Home\\Index.cshtml",
+              "ToolTip": "C:\\Users\\User\\OneDrive\\Documents\\.net\\HelloWorld\\Views\\Home\\Index.cshtml",
+              "RelativeToolTip": "Views\\Home\\Index.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAATAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-12-12T05:22:59.23Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Delete.cshtml",
+              "DocumentMoniker": "C:\\Users\\User\\OneDrive\\Documents\\.net\\HelloWorld\\Views\\Home\\Delete.cshtml",
+              "RelativeDocumentMoniker": "Views\\Home\\Delete.cshtml",
+              "ToolTip": "C:\\Users\\User\\OneDrive\\Documents\\.net\\HelloWorld\\Views\\Home\\Delete.cshtml",
+              "RelativeToolTip": "Views\\Home\\Delete.cshtml",
+              "ViewState": "AgIAABoAAAAAAAAAAAAmwEUAAAAqAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-12-16T09:12:04.406Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
